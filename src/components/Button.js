@@ -15,7 +15,7 @@ const ButtonStyle = styled.div`
     color: ${(props) => (props.outline ? 'var (--gray-1)' : 'black')};
   }
   .button:hover {
-    color: ${(props) => (props.outline ? 'white' : 'white')};
+    color: ${(props) => (props.outline ? 'var (--white)' : 'white')};
   }
   @media only screen and (max-width: 768px) {
     .button {
