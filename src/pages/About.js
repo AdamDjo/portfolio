@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import Resume from '../assets/data/CV.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -54,6 +55,21 @@ const AboutPageStyles = styled.div`
     font-size: 3.6rem;
     text-transform: uppercase;
   }
+  .download-btn {
+    a {
+      font-size: 2.2rem;
+      background-color: black;
+      padding: 0.7rem 2rem;
+      border-radius: 8px;
+      display: inline-block;
+      border: 2px solid var(--gray-1);
+      color: white !important;
+      cursor: pointer;
+    }
+    a:hover {
+      background-color: white;
+    }
+  }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
@@ -91,7 +107,11 @@ export default function About() {
                 Lorem Lorem lorem lorem lorem <br />
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" outline="" />
+            <div className="download-btn">
+              <a href={Resume} download="myCV">
+                <b>Download CV</b>
+              </a>
+            </div>
           </div>
           <div className="right">
             <img src={AboutImg} alt="adam" />
