@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdLocalPhone, MdEmail } from 'react-icons/md';
+import { MdEmail } from 'react-icons/md';
 
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
