@@ -121,7 +121,7 @@ export default function Footer() {
         <div className="container">
           <div className="copyright--footer">
             <PText>
-              ©2022 - Adam - React developper // Blockchain specialist
+              ©2022 - Adam - React developer // Blockchain specialist
             </PText>
           </div>
         </div>

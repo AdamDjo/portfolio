@@ -40,18 +40,22 @@ export default function ProjectItem({
   img = projectImg,
   title = 'project Name',
   desc = 'lorem lorem lorem lorem lorem',
+  link = '/projects',
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt=" project img" />
-      </Link>
+      <a href={link} target='"_blank"' rel="noreferrer">
+      <div className='projectItem__img'>
+        <img src={img} alt="project img" />
+      </div>
+      
       <div className="projectItem__info">
         <Link to="#">
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc"> {desc}</p>
       </div>
+      </a>
     </ProjectItemStyles>
   );
 }
