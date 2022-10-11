@@ -6,8 +6,16 @@ import Meta from "../images/MetaNurse.jpg";
 import Digi from "../images/Digipunks.jpg";
 import Behance from "../images/Behance.jpg";
 import Swap from "../images/Swap.png";
+import Agency from "../images/Agency.png";
 
 const projects = [
+  {
+    id: uuidv4(),
+    name: "Agency website",
+    desc: "React website for agency developed with love on React & animated with farmer-motion.",
+    img: Agency,
+    link: "https://agency-website20.netlify.app/",
+  },
   {
     id: uuidv4(),
     name: "SavagesTotsys",
